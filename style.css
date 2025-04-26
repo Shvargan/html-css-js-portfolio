@@ -323,7 +323,7 @@ section {
 .details-container.color-container {
   display: flex;
   flex-direction: column;
-  height: 450px; /* Fixed height for project cards */
+  height: auto;
 }
 
 /* EXPERIENCE SECTION */
@@ -346,13 +346,12 @@ section {
 
 .article-container {
   display: flex;
-  text-align: initial;
   flex-wrap: wrap;
-  flex-direction: row;
-  gap: 2rem;
+  gap: 1.5rem;
   justify-content: center;
-  height: 250px;
-  overflow: hidden;
+  text-align: left;
+  scrollbar-width: thin;
+  scrollbar-color: #999 transparent;
 }
 
 article {
@@ -382,6 +381,13 @@ article .icon {
   width: 100%;
   height: auto;
   object-fit: cover;
+  max-height: 350px;
+}
+
+.project-img-container {
+  width: 100%;
+  display: flex;
+  justify-content: center;
 }
 
 .project-title {
